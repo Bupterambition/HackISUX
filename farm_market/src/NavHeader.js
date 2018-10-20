@@ -19,6 +19,9 @@ class NavHeader extends React.Component {
                    <NavItem>
                        Login
                    </NavItem>
+                   <NavItem>
+                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                   </NavItem>
                 </Nav>
             </Navbar>
         )
