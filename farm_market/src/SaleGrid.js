@@ -1,5 +1,5 @@
 import React from "react";
-import { Panel, Grid, Row, Col } from "react-bootstrap/lib";
+import { Panel } from "react-bootstrap/lib";
 import SaleItem from "./SaleItem";
 
 class SaleGrid extends React.Component {
@@ -17,7 +17,7 @@ class SaleGrid extends React.Component {
         return (
             <Panel style={panelStyles}>
                 <Panel.Heading>
-                    <Panel.Title componentClass="h3">Panel heading</Panel.Title>
+                    <Panel.Title componentClass="h3">Farmer Joe</Panel.Title>
                 </Panel.Heading>
                 <Panel.Body style={styles}>
                 <div class="col-md-12">
@@ -31,7 +31,6 @@ class SaleGrid extends React.Component {
                         <SaleItem />
                     </div>
                 </div>
-
                 </Panel.Body>
             </Panel>
         )
