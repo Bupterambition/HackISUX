@@ -10,18 +10,14 @@ class NavHeader extends React.Component {
                     <a href="#home">Farmer&#39;s Market</a>
                     </Navbar.Brand>
                 </Navbar.Header>
-                <Navbar.Collapse>
-                    <NavItem>
+                <Nav pullRight>
+                   <NavItem>
                        Login
                    </NavItem>
-                    <Nav pullRight>
-                  
                    <NavItem>
                         <span class="glyphicon glyphicon-shopping-cart"></span>
                    </NavItem>
                 </Nav>
-                </Navbar.Collapse>
-                
             </Navbar>
         )
     }
