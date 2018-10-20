@@ -1,3 +1,7 @@
 # Setup
-## Requirement stuff (pip installs)
-- `pip install flask python-dotenv`
+## Pip stuff
+- `pip install flask python-dotenv pymongo mongo`
+
+#MongoDB Stuff
+- Install MongoDB (not cloud)
+- Start MongoDB as a Windows service: `net start MongoDB`
