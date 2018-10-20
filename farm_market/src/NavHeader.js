@@ -8,11 +8,11 @@ class NavHeader extends React.Component {
             <Navbar>
                 <Navbar.Header>
                     <Navbar.Brand>
-                    <a href="#home">Farmers Market</a>
+                    <a href="#home" className="floatLeft">Farmer's Market</a>
                     </Navbar.Brand>
                 </Navbar.Header>
                 <Nav pullRight>
-                   <NavItem>
+                   <NavItem className="floatRight">
                        Login
                    </NavItem>
                 </Nav>

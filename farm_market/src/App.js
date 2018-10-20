@@ -7,7 +7,6 @@ class App extends Component {
   render() {
 
     const styles = {
-			"backgroundColor": "#4e7a4a"
 		};
 
     return (

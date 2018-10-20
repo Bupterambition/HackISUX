@@ -6,16 +6,21 @@ class Welcome extends React.Component {
 
 		const styles = {
 			"textAlign": "center",
-			"backgroundColor": "#ffffff"
+			"color": "#ffffff"
 		};
 
+		const h1Styles = {
+			"fontSize" : "150%",
+			"margin-top" : "30px"
+		}
+
 		return (
-            <div>
+            <div style={styles}>
                 <NavHeader />
-                <div style={styles}>
-				    <h1>Welcome to the online Farmer's Market!</h1>
-				<p>Want to buy produce cheaply and easily? Well you came to the right place.</p>
-			    </div>
+                <div style={h1Styles}>
+				    			<h1>Welcome to the online Farmer&#39;s Market!</h1>
+									<p>Want to buy produce cheaply and easily? Well, you came to the right place.</p>
+			    			</div>
             </div>
 		);
 	}
