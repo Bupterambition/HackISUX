@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import Welcome from './Welcome';
-import SearchBar from './SearchBar';
-import SaleGrid from './SaleGrid';
 
 class Farmers extends Component {
   render() {
