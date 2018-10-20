@@ -22,7 +22,7 @@ class Welcome extends React.Component {
 		return (
             <div style={styles}>
                 <NavHeader />
-				    			<h1 style={h1Styles}>Welcome to the online Farmer&#39;s Market!</h1>
+				    			<h1 style={h1Styles}>Welcome to Digital Harvest!</h1>
 									<p style={pStyles}>Want to buy produce cheaply and easily? Well, you came to the right place.</p>
             </div>
 		);
