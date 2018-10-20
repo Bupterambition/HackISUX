@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Welcome from './Welcome';
-import SearchBar from './SearchBar';
 import FarmerGrid from './FarmerGrid';
 
 class Farmers extends Component {
