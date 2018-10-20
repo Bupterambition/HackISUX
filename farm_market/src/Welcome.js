@@ -1,9 +1,9 @@
 import React from 'react';
-import NavHeader from './NavHeader';
+import SearchBar from './SearchBar';
+import SaleGrid from './SaleGrid';
 
 class Welcome extends React.Component {
 	render() {
-
 		const styles = {
 			"textAlign": "center",
 			"color": "#ffffff"
@@ -20,11 +20,17 @@ class Welcome extends React.Component {
 		}
 
 		return (
-            <div style={styles}>
-                <NavHeader />
-				    			<h1 style={h1Styles}>Welcome to the online Farmer&#39;s Market!</h1>
-									<p style={pStyles}>Want to buy produce cheaply and easily? Well, you came to the right place.</p>
-            </div>
+			<div>
+				<div style={styles}>
+					<h1 style={h1Styles}>Welcome to the online Farmer&#39;s Market!</h1>
+					<p style={pStyles}>Want to buy produce cheaply and easily? Well, you came to the right place.</p>
+				</div>
+				<div class="col-md-6 col-md-offset-3">
+				<SearchBar />
+				<SaleGrid />
+				</div>
+			</div>
+           
 		);
 	}
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import { Thumbnail, Button } from "react-bootstrap/lib";
+import { Link } from "react-router-dom";
 
 class SaleItem extends React.Component {
     render() {
@@ -16,7 +17,7 @@ class SaleItem extends React.Component {
           //TODO: pull information from database
             <Thumbnail src="https://img1.ak.crunchyroll.com/i/spire1/91ac5d44a439598ca8f5880c0d1dd5a51471101892_large.jpg" alt="242x200">
                 <h3 style={textStyles}>Apple</h3>
-                <p style={textStyles}>Address: <a href="">Link to Google</a></p>
+                <p style={textStyles}>Address: <Link to="/">Link to Google</Link></p>
                 <p style={buttonStyles}>
                 <Button bsStyle="success">Buy</Button>
                 </p>
