@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, NavItem } from "react-bootstrap/lib";
+import { Link } from "react-router-dom";
 
 class NavHeader extends React.Component {
     render() {

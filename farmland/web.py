@@ -1,9 +1,5 @@
-from app import app
-from pymongo import MongoClient
+from app import app, db, models
 
-#Establish database connection
-client = MongoClient()
-db = client.database
-
-#Current database has a farmer joe with a location of omaha and an inventory of 3 apples and 2 bananas
-#Also there's a apple_t in the inventory database
+@app.shell_context_processor
+def make_shell_context():
+    return {'db': db, 'Farmer': models.Farmer, 'Item': models.Item}
