@@ -8,7 +8,7 @@ class NavHeader extends React.Component {
             <Navbar>
                 <Navbar.Header>
                     <Navbar.Brand>
-                    <a href="#home">Farmer's Market</a>
+                        <a href="#home">Farmer's Market</a>
                     </Navbar.Brand>
                 </Navbar.Header>
                 <Nav pullRight>
