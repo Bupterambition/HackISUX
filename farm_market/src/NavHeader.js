@@ -1,6 +1,5 @@
 import React from 'react';
 import { Navbar, Nav, NavItem } from "react-bootstrap/lib";
-import { Link } from "react-router-dom";
 
 class NavHeader extends React.Component {
     render() {
@@ -8,7 +7,7 @@ class NavHeader extends React.Component {
             <Navbar>
                 <Navbar.Header>
                     <Navbar.Brand>
-                    <Link to="/">Farmer&#39;s Market</Link>
+                    <a href="#home">Digital Harvest</a>
                     </Navbar.Brand>
                 </Navbar.Header>
                 <Nav pullRight>

@@ -22,7 +22,7 @@ class Welcome extends React.Component {
 		return (
 			<div>
 				<div style={styles}>
-					<h1 style={h1Styles}>Welcome to the online Farmer&#39;s Market!</h1>
+					<h1 style={h1Styles}>Welcome to the Digital Harvest!</h1>
 					<p style={pStyles}>Want to buy produce cheaply and easily? Well, you came to the right place.</p>
 				</div>
 				<div class="col-md-6 col-md-offset-3">
@@ -30,7 +30,7 @@ class Welcome extends React.Component {
 				<SaleGrid />
 				</div>
 			</div>
-           
+
 		);
 	}
 }

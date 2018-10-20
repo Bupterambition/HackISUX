@@ -21,15 +21,15 @@ class SaleGrid extends React.Component {
                 </Panel.Heading>
                 <Panel.Body style={styles}>
                 <div class="col-md-12">
-                <div class="col-md-4">
-                        <SaleItem />
-                    </div>
-                    <div class="col-md-4">
-                        <SaleItem />
-                    </div>
-                    <div class="col-md-4">
-                        <SaleItem />
-                    </div>
+                  <div class="col-md-4">
+                    <SaleItem />
+                  </div>
+                  <div class="col-md-4">
+                    <SaleItem />
+                  </div>
+                  <div class="col-md-4">
+                    <SaleItem />
+                  </div>
                 </div>
                 </Panel.Body>
             </Panel>
