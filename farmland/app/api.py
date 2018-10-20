@@ -1,6 +1,6 @@
-from app import app
-from pymongo import MongoClient
-from bson.json_util import dumps
+from app import app, db
+from app.models import Farmer, Item
+import json
 
 @app.route('/')
 @app.route('/index')
@@ -9,12 +9,8 @@ def index():
 
 @app.route('/farmers/<location>')
 def get_farmers_by_loc(location):
-    client = MongoClient()
-    db = client.database
-    return dumps(db.farmers.find({"location": location}))
+    return str(Farmer.query.filter_by(location=location).all())
 
-@app.route('/inventory/<item>')
-def get_food(item):
-    client = MongoClient()
-    db = client.database
-    return dumps(db.inventory.find({"name": item}))
+@app.route('/item/<item>')
+def get_item(item):
+    return str(Item.query.filter_by(name=item).all())
