@@ -1,11 +1,12 @@
 from app import app, db
 from app.models import Farmer, Item
 import json
+from flask import redirect, url_for, render_template
 
+@app.route('/<path>')
 @app.route('/')
-@app.route('/index')
-def index():
-    return 'Test landing page'
+def index(path = ''):
+    return render_template('index.html')
 
 @app.route('/farmers/<location>')
 def get_farmers_by_loc(location):
