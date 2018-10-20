@@ -5,6 +5,10 @@ class AddToCart extends React.Component {
 
       render() {
 
+        const textStyles = {
+          "textAlign" : "center"
+        }
+
         const buttonStyles = {
             "marginLeft" : "80%"
         }
