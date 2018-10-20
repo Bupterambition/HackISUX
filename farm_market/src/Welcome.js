@@ -6,7 +6,10 @@ class Welcome extends React.Component {
 
 		const styles = {
 			"textAlign": "center",
-			"backgroundColor": "#ffffff"
+			"color": "#ffffff",
+			"top": "75px",
+			"position": "relative",
+			"fontSize": "150%"
 		};
 
 		return (
@@ -14,7 +17,7 @@ class Welcome extends React.Component {
                 <NavHeader />
                 <div style={styles}>
 				    <h1>Welcome to the online Farmer's Market!</h1>
-				<p>Want to buy produce cheaply and easily? Well you came to the right place.</p>
+				<p>Want to buy produce cheaply and easily? Well, you came to the right place.</p>
 			    </div>
             </div>
 		);
