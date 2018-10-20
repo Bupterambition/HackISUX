@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormGroup, InputGroup, FormControl, DropdownButton } from "react-bootstrap/lib";
+import { FormGroup, InputGroup, FormControl, DropdownButton, MenuItem } from "react-bootstrap/lib";
 
 class SearchBar extends React.Component {
     render() {
@@ -11,9 +11,11 @@ class SearchBar extends React.Component {
                         <DropdownButton
                             componentClass={InputGroup.Button}
                             id="input-dropdown-addon"
-                            title="Action">
-                            Location
-                        </DropdownButton> 
+                            title="Location">
+                            <MenuItem key="1">Iowa City</MenuItem>
+                            <MenuItem key="2">Omaha</MenuItem>
+                            <MenuItem key="3">All</MenuItem>
+                        </DropdownButton>
                     </InputGroup>
                 </FormGroup>
             </form>
