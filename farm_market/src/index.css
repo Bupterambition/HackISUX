@@ -6,14 +6,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('images/LandingPageBackground.png')!important;
+  background-image: url('images/LandingPageBackground.png') !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
-}
-
-h1 {
-	font-size: 300%!important;
-	padding-bottom: 15px;
 }
