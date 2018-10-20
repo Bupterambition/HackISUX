@@ -14,8 +14,7 @@ class Farmers extends Component {
     return (
        <div>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossOrigin="anonymous"></link>
-        <Welcome />
-        <h3 style={h3Styles}>View Farmer&#39;s Market growers here by viewing farmer&#39;s profiles</h3>
+        <h3 style={h3Styles}>View Digital Harvest growers here by viewing farmer&#39;s profiles</h3>
         <FarmerGrid />
       </div>
     );
