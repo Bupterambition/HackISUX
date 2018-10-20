@@ -3,6 +3,7 @@ import { Grid, Row, Col } from "react-bootstrap/lib";
 import SaleItem from "./SaleItem";
 
 class SaleGrid extends React.Component {
+
     render() {
         return (
             <Grid>
