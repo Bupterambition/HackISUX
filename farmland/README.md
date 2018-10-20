@@ -1,6 +1,6 @@
 # Setup
 ## Pip stuff
-- `pip install flask python-dotenv pymongo mongo`
+- `pip install flask python-dotenv flask-sqlalchemy flask-migrate`
 - `export FLASK_APP=web.py`
 
 # MongoDB Stuff
