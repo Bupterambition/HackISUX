@@ -6,14 +6,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #4e7a4a;
+  background-image: url('images/LandingPageBackground.png') !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
-}
-
-.welcome {
-	text-align: center;
-	color: #ffffff;
 }
