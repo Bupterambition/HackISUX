@@ -5,7 +5,7 @@ class SearchBar extends React.Component {
     render() {
 
         const dropDownStyles = {
-          "backgroundColor" : "#d4d7db",
+          "backgroundColor" : "#d1d1d1",
           "marginLeft" : "10px"
         }
 
