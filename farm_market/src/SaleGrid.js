@@ -5,12 +5,21 @@ import SaleItem from "./SaleItem";
 class SaleGrid extends React.Component {
 
     render() {
+
+      const styles = {
+          "backgroundColor" : "#d1d1d1",
+      }
+
+      const panelStyles = {
+        "marginTop" : "3%"
+  }
+
         return (
-            <Panel>
+            <Panel style={panelStyles}>
                 <Panel.Heading>
                     <Panel.Title componentClass="h3">Panel heading</Panel.Title>
                 </Panel.Heading>
-                <Panel.Body>
+                <Panel.Body style={styles}>
                 <div class="col-md-12">
                 <div class="col-md-4">
                         <SaleItem />
@@ -22,18 +31,7 @@ class SaleGrid extends React.Component {
                         <SaleItem />
                     </div>
                 </div>
-                <div class="col-md-12">
-                <div class="col-md-4">
-                        <SaleItem />
-                    </div>
-                    <div class="col-md-4">
-                        <SaleItem />
-                    </div>
-                    <div class="col-md-4">
-                        <SaleItem />
-                    </div>
-                </div>
-                    
+
                 </Panel.Body>
             </Panel>
         )
