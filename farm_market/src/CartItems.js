@@ -35,7 +35,7 @@ class AddToCart extends React.Component {
           "marginLeft" : "40%",
           "marginRight" : "40%",
           "height" : "10%",
-          "width" : "60%",
+          "width" : "20%",
           "paddingTop" : "10px",
           "marginTop" : "7%"
         };
@@ -55,16 +55,14 @@ class AddToCart extends React.Component {
         console.log(this.state);
 
         return (
-          <div>
-              <h3 style={textStyles}>{this.state.farmer + "'s " + this.state.item}</h3>
-              <Thumbnail src={"/images/" + this.state.item + ".jpg"} alt={this.state.item} style={styles}>
+            <Thumbnail src={"/images/" + this.state.item + ".jpg"} alt={this.state.item} style={styles}>
+                <h3 style={textStyles}>{this.state.farmer + "'s " + this.state.item}</h3>
                   <p>Quantity: <QuantityInput /> out of {this.state.quantity} {this.state.item} available</p>
-                  <p style={textStyles}>Location:</p>
+                  <p style={textStyles}>Address:</p>
                 <p style={buttonStyles}>
                 <Button bsStyle="success">Add to Cart</Button>
                 </p>
-              </Thumbnail>
-            </div>
+            </Thumbnail>
         );
       }
   }
