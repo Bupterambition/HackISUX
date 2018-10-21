@@ -12,7 +12,7 @@ class SaleGridList extends React.Component {
     }
 
     getSales() {
-        fetch("/farmers/ames").then(results => {
+        fetch("/farmers/" + this.props.location).then(results => {
             return results.json();
         }).then(data => {
             let sales = data.map(item => {
@@ -37,7 +37,6 @@ class SaleGridList extends React.Component {
                     </Panel>
                 );
             });
-            console.log(sales);
             this.setState( {sales: sales });
         });
     }

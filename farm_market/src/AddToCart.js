@@ -1,9 +1,6 @@
 import React from 'react';
 import { Thumbnail, Button } from "react-bootstrap/lib";
-<<<<<<< HEAD
-=======
 import QuantityInput from './QuantityInput';
->>>>>>> 3c80f870e68297dad5354379a4afe50468e1381a
 
 class AddToCart extends React.Component {
 
@@ -15,17 +12,16 @@ class AddToCart extends React.Component {
           "height" : "10%",
           "width" : "20%",
           "paddingTop" : "10px"
-        }
+        };
 
         const textStyles = {
           "textAlign" : "center"
-        }
+        };
 
         const buttonStyles = {
             "marginLeft" : "35%"
-        }
+        };
 
-        //TODO: pull information from database
         return (
           <div>
             <Thumbnail src="https://img1.ak.crunchyroll.com/i/spire1/91ac5d44a439598ca8f5880c0d1dd5a51471101892_large.jpg" alt="242x200" style={styles}>

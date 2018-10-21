@@ -3,6 +3,33 @@ import SearchBar from './SearchBar';
 import SaleGridList from './SaleGridList';
 
 class Welcome extends React.Component {
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			location: "omaha"
+		};
+
+		this.onLocationChange = this.onLocationChange.bind(this);
+	}
+
+	onLocationChange(e) {
+
+		console.log("location change to " + e);
+
+		// this.setState("ames");
+
+		// if (e.eventKey === 1) {
+		// 	this.setState("iowa city")
+		// } else if (e.eventKey === 2) {
+		// 	this.setState("ames")
+		// } else if (e.eventKey === 3) {
+		// 	this.setState("omaha")
+		// } else if (e.eventKey === 4) {
+		// 	this.setState("all");
+		// }
+	}
+
 	render() {
 		const styles = {
 			"textAlign": "center",
@@ -12,12 +39,14 @@ class Welcome extends React.Component {
 		const h1Styles = {
 			"fontSize" : "300%",
 			"marginTop" : "30px"
-		}
+		};
 
 		const pStyles = {
 			"fontSize" : "130%",
 			"marginBottom" : "35px"
-		}
+		};
+
+		console.log("location is: " + this.state.location);
 
 		return (
 			<div>
@@ -26,11 +55,10 @@ class Welcome extends React.Component {
 					<p style={pStyles}>Want to buy produce cheaply and easily? Well, you came to the right place.</p>
 				</div>
 				<div class="col-md-6 col-md-offset-3">
-				<SearchBar />
-				<SaleGridList />
+				<SearchBar onLocationChange={this.onLocationChange} />
+				<SaleGridList location={this.state.location} />
 				</div>
 			</div>
-
 		);
 	}
 }
