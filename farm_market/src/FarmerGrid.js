@@ -14,7 +14,8 @@ class FarmerGrid extends React.Component {
         "marginTop" : "3%",
         "marginRight" : "15%",
         "marginLeft" : "15%",
-        "textAlign" : "center"
+        "textAlign" : "center",
+        "border" : "10px solid #244221"
   }
 
         return (
