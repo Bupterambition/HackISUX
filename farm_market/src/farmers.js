@@ -7,7 +7,7 @@ class Farmers extends Component {
     const h3Styles = {
       "textAlign" : "center",
       "color" : "rgb(230, 255, 240)"
-    }
+    };
 
     return (
        <div>

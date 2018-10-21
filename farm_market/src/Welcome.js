@@ -47,8 +47,6 @@ class Welcome extends React.Component {
 			"marginBottom" : "35px"
 		};
 
-		console.log("location is: " + this.state.location);
-
 		return (
 			<div>
 				<div style={styles}>

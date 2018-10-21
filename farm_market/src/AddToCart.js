@@ -4,8 +4,33 @@ import QuantityInput from './QuantityInput';
 
 class AddToCart extends React.Component {
 
-      render() {
+      constructor(props) {
+        super(props);
+        this.state = {
+          farmer: "",
+          item: "",
+          quantity: ""
+        };
+      }
 
+      getItem() {
+        console.log("/item/" + this.props.name);
+        fetch("/item/" + this.props.name).then(data => {
+          return data.json();
+        }).then(res => {
+          console.log(res);
+          let item = res.filter(i => i.farmer === this.props.farmer &&
+             i.name === this.props.name)[0];
+          this.setState(
+            {
+              farmer: item.farmer, 
+              item: item.name, 
+              quantity: item.quantity
+            });            
+          });
+      }
+
+      render() {
         const styles = {
           "marginLeft" : "40%",
           "marginRight" : "40%",
@@ -13,7 +38,7 @@ class AddToCart extends React.Component {
           "width" : "20%",
           "paddingTop" : "10px",
           "marginTop" : "7%"
-        }
+        };
 
         const textStyles = {
           "textAlign" : "center"
@@ -23,17 +48,21 @@ class AddToCart extends React.Component {
             "marginLeft" : "35%"
         };
 
+        this.getItem();
+        console.log("props");
+        console.log(this.props);
+        console.log("state");
+        console.log(this.state);
+
         return (
-          <div>
-            <Thumbnail src="https://img1.ak.crunchyroll.com/i/spire1/91ac5d44a439598ca8f5880c0d1dd5a51471101892_large.jpg" alt="242x200" style={styles}>
-                <h3 style={textStyles}>Farmer Joe&#39;s Apples</h3>
-                  <p>Quantity: <QuantityInput /> out of 500 apples available</p>
+            <Thumbnail src={"/images/" + this.state.item + ".jpg"} alt={this.state.item} style={styles}>
+                <h3 style={textStyles}>{this.state.farmer + "'s " + this.state.item}</h3>
+                  <p>Quantity: <QuantityInput /> out of {this.state.quantity} {this.state.item} available</p>
                   <p style={textStyles}>Address:</p>
                 <p style={buttonStyles}>
                 <Button bsStyle="success">Add to Cart</Button>
                 </p>
             </Thumbnail>
-          </div>
         );
       }
   }

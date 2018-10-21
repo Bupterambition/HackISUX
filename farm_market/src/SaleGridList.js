@@ -27,11 +27,11 @@ class SaleGridList extends React.Component {
                 return (
                     <Panel style={panelStyles}>
                         <Panel.Heading>
-                            <Panel.Title componentClass="h3">Farmer Joe, location: {item.location}</Panel.Title>
+                            <Panel.Title componentClass="h3">{item.name}, location: {item.location}</Panel.Title>
                         </Panel.Heading>
                         <Panel.Body style={styles}>
                             <div class="col-md-12">
-                                <SaleGrid sales={item.items} />
+                                <SaleGrid farmer={item.name} sales={item.items} />
                             </div>
                         </Panel.Body>
                     </Panel>
@@ -44,7 +44,7 @@ class SaleGridList extends React.Component {
     render() {
         this.getSales();
 
-        return  this.state.sales;
+        return this.state.sales;
     }
 }
 

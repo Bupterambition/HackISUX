@@ -15,7 +15,7 @@ class SaleGrid extends React.Component {
         return items.map(item => {
             return (
                 <div style={panelStyles} class="col-md-4">
-                    <SaleItem saleName={item}/>
+                    <SaleItem farmer={this.props.farmer} saleName={item}/>
                 </div>
             );
         });
