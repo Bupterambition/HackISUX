@@ -1,7 +1,7 @@
 from app import app, db
 from app.models import Farmer, Item
 import json
-from flask import redirect, url_for, render_template
+from flask import redirect, url_for, render_template, send_from_directory
 
 @app.route('/<path>')
 @app.route('/')
@@ -48,3 +48,7 @@ def sell_item(farmer, item, amount):
     i.quantity = i.quantity - int(amount)
     db.session.commit()
     return json.dumps({"success": True})
+
+@app.route('/images/<image>')
+def get_image(image):
+    return send_from_directory('images', image)
