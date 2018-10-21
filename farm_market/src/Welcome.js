@@ -15,19 +15,20 @@ class Welcome extends React.Component {
 
 	onLocationChange(e) {
 
-		console.log("location change to " + e);
+		let newLoc = "";
+		if (e == 1) {
+			newLoc = "ames";
+		} else if (e == 2) {
+			newLoc = "omaha";
+		} else if (e == 3) {
+			newLoc = "iowa city";
+		} else {
+			newLoc = "all";
+		}
 
-		// this.setState("ames");
-
-		// if (e.eventKey === 1) {
-		// 	this.setState("iowa city")
-		// } else if (e.eventKey === 2) {
-		// 	this.setState("ames")
-		// } else if (e.eventKey === 3) {
-		// 	this.setState("omaha")
-		// } else if (e.eventKey === 4) {
-		// 	this.setState("all");
-		// }
+		this.setState({
+			location: newLoc
+		});
 	}
 
 	render() {

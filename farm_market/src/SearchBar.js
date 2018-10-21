@@ -18,11 +18,11 @@ class SearchBar extends React.Component {
                             style={dropDownStyles}
                             componentClass={InputGroup.Button}
                             id="input-dropdown-addon"
-                            title="Ames"
+                            title="Location"
                             onSelect={this.props.onLocationChange}>
-                            <MenuItem eventKey="1">Iowa City</MenuItem>
-                            <MenuItem eventKey="2">Ames</MenuItem>
-                            <MenuItem eventKey="3">Omaha</MenuItem>
+                            <MenuItem eventKey="1">Ames</MenuItem>
+                            <MenuItem eventKey="2">Omaha</MenuItem>
+                            <MenuItem eventKey="3">Iowa City</MenuItem>
                             <MenuItem eventKey="4">All</MenuItem>
                         </DropdownButton>
                     </InputGroup>
