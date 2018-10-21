@@ -1,10 +1,18 @@
 import React from "react";
-import { Panel } from "react-bootstrap/lib";
 import SaleItem from "./SaleItem";
 
 class SaleGrid extends React.Component {
 
     render() {
+<<<<<<< HEAD
+        let sales = this.props.sales;
+
+        let items = sales.slice(0, Math.min(sales.length, 3));
+
+        const panelStyles = {
+            "marginTop" : "3%"
+        };
+=======
 
       const styles = {
           "backgroundColor" : "#d1d1d1",
@@ -13,27 +21,15 @@ class SaleGrid extends React.Component {
       const panelStyles = {
         "marginTop" : "3%"
   }
+>>>>>>> 3c80f870e68297dad5354379a4afe50468e1381a
 
-        return (
-            <Panel style={panelStyles}>
-                <Panel.Heading>
-                    <Panel.Title componentClass="h3">Farmer Joe</Panel.Title>
-                </Panel.Heading>
-                <Panel.Body style={styles}>
-                <div class="col-md-12">
-                  <div class="col-md-4">
-                    <SaleItem />
-                  </div>
-                  <div class="col-md-4">
-                    <SaleItem />
-                  </div>
-                  <div class="col-md-4">
-                    <SaleItem />
-                  </div>
+        return items.map(item => {
+            return (
+                <div style={panelStyles} class="col-md-4">
+                    <SaleItem saleName={item}/>
                 </div>
-                </Panel.Body>
-            </Panel>
-        )
+            );
+        });
     }
 }
 

@@ -1,6 +1,9 @@
 import React from 'react';
 import { Thumbnail, Button } from "react-bootstrap/lib";
+<<<<<<< HEAD
+=======
 import QuantityInput from './QuantityInput';
+>>>>>>> 3c80f870e68297dad5354379a4afe50468e1381a
 
 class AddToCart extends React.Component {
 
