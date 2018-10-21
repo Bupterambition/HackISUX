@@ -1,6 +1,6 @@
 import React from 'react';
 import SearchBar from './SearchBar';
-import SaleGrid from './SaleGrid';
+import SaleGridList from './SaleGridList';
 
 class Welcome extends React.Component {
 	render() {
@@ -27,7 +27,7 @@ class Welcome extends React.Component {
 				</div>
 				<div class="col-md-6 col-md-offset-3">
 				<SearchBar />
-				<SaleGrid />
+				<SaleGridList />
 				</div>
 			</div>
 
